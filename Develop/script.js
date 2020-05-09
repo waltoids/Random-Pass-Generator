@@ -18,7 +18,7 @@ var upperChar;
 var lowerChar;
 var charSpecial;
 var charNum;
-var charList;
+var charList = "";
 
 //prompt user to input character length, make sure they put in a valid number
  passwordLength = parseInt(prompt("Choose how many characters, from 8 to 128, you want your password to have. "));

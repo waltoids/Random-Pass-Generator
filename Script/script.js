@@ -36,7 +36,8 @@ var charList = "";
  charNum = confirm("Would you like numbers in your password?");
 
     if(upperChar == false && lowerChar == false && charSpecial == false && charNum == false){
-    alert("You need to pick at least one option!")
+    alert("You need to pick at least one option! Try again!!")
+    return;
     }
 
     if(upperChar) {

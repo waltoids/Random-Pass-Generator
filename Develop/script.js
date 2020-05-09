@@ -40,20 +40,35 @@ var specialChar = [
   "/u007C",
   "/u007D",
   "/u007E"
+];
 
-]
-
+//generate password length, characters
 function generatePassword() {
 var passwordLength;
 var upperChar;
-var LowerChar;
+var lowerChar;
 var charSpecial;
 var charNum;
 var charList = "";
 
- do (passwordLength = parseInt(promt("Choose how many characters, from 8 to 128, you want your password to have. "))
+//prompt user to input character length, make sure they put in a valid number
+ passwordLength = parseInt(prompt("Choose how many characters, from 8 to 128, you want your password to have. "));
+    if (passwordLength == "undefiend" || Number.isNaN(passwordLength)) {
+      alert("You need to put in a number!")
+      return;
+    }
+    if (passwordLength < 8 || passwordLength > 128) {
+      alert("The password length can only be from 8 to 128 characters long!")
+      return;
+  }
+ upperChar = confirm("Would you like upper cased letters in your password?");
+ lowerChar = confirm("Would you like lower cased letters in your password?");
+ charSpecial = confirm("Would you like special characters in your password?");
+ charNum = confirm("Would you like numbers in your password?");
 
-
+    if(upperChar == "false" && lowerChar == "false" && charSpecial == "false" && charNum == "false"){
+    alert("You need to pick at least one option!")
+    }
 }
 
 

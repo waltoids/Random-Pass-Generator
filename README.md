@@ -6,3 +6,6 @@ Then, the user will be given options for what to include in their password. At l
 Finally, the script will generate a random password using the length and options choosen. A password will be generated and written in the "Your Secure Password" field.
 # Use at your own risk
 Feel free to clone if desired.
+
+# Example of how the application looks.
+![Password Generator Demo](/Assets/Password_Generator.png)

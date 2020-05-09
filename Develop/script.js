@@ -1,8 +1,12 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var ltrsLow = "abcdefghijklmnopqrstuvwxyz";
-var ltrsUp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+var charLow = "abcdefghijklmnopqrstuvwxyz";
+
+var charUp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
 var numChar = "1234567890";
+
 var specialChar = [
   "/u0021",
   "/u0022",
@@ -38,6 +42,20 @@ var specialChar = [
   "/u007E"
 
 ]
+
+function generatePassword() {
+var passwordLength;
+var upperChar;
+var LowerChar;
+var charSpecial;
+var charNum;
+var charList = "";
+
+ do (passwordLength = parseInt(promt("Choose how many characters, from 8 to 128, you want your password to have. "))
+
+
+}
+
 
 // Write password to the #password input
 function writePassword() {

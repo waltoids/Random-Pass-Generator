@@ -59,7 +59,7 @@ function randomizeList(passwordLength, charList){
   var password = "";
 
   for(i = 0; i < passwordLength; i++) {
-    password += charList[Math.floor(Math.random() * (charList.length) +1 )];
+    password += charList[Math.floor(Math.random() * (charList.length))];
   }
   return password;
 }

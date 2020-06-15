@@ -1,3 +1,5 @@
+[Demo site](https://waltoids.github.io/Random-Pass-Generator/)
+
 # Random Password Generator
 The purpose of this project is to demonstrate how javascript can be used to genertate a (pseudo)random password.
 In the web application, once it a user clicks on the "generate password" button:
